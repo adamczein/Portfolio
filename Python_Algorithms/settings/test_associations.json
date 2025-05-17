@@ -1,0 +1,194 @@
+{
+    "test_score_viral_abstraite": {
+      "name": "TestElementViral: test_score_viral_abstraite",
+      "points": 2
+    },
+    "test_attributs": {
+      "name": "TestMusique: test_attributs",
+      "points": 1
+    },
+    "test_score_viral": {
+      "name": "TestMusique: test_score_viral",
+      "points": 1
+    },
+    "test_attributs_filtre": {
+      "name": "TestFiltre: test_attributs_filtre",
+      "points": 1
+    },
+    "test_score_viral_filtre": {
+      "name": "TestFiltre: test_score_viral_filtre",
+      "points": 1
+    },
+    "test_constructeur": {
+      "name": "TestAccessoire: test_constructeur",
+      "points": 1
+    },
+    "test_attributs_accessoire": {
+      "name": "TestAccessoire: test_attributs_accessoire",
+      "points": 1
+    },
+    "test_str":{
+        "name":"TestAccessoire: test_str",
+        "points":1
+    },
+    "test_score_viral_chapeau": {
+      "name": "TestAccessoire: test_score_viral_chapeau",
+      "points": 1
+    },
+    "test_score_viral_chaussures": {
+      "name": "TestAccessoire: test_score_viral_chaussures",
+      "points": 1
+    },
+    "test_score_viral_bijou": {
+      "name": "TestAccessoire: test_score_viral_bijou",
+      "points": 1
+    },
+    "test_score_viral_vetement": {
+      "name": "TestAccessoire: test_score_viral_vetement",
+      "points": 1
+    },
+    "test_add": {
+      "name": "TestAnimal: test_add",
+      "points": 1
+    },
+    "test_iadd": {
+      "name": "TestAnimal: test_iadd",
+      "points": 1
+    },
+    "test_iadd_chaussures": {
+      "name": "TestAnimal: test_iadd_chaussures",
+      "points": 1
+    },
+    "test_crier_abstraite": {
+      "name": "TestAnimal: test_crier_abstraite",
+      "points": 1
+    },
+    "test_score_viral_animal": {
+      "name": "TestAnimal: test_score_viral_animal",
+      "points": 1
+    },
+    "test_calcul_meilleur_animal": {
+      "name": "TestAnimal: test_calcul_meilleur_animal",
+      "points": 1
+    },
+    "test_constructeur_chat": {
+      "name": "TestMammifere: test_constructeur_chat",
+      "points": 1
+    },
+    "test_str_mammifere": {
+      "name": "TestMammifere: test_str_mammifere",
+      "points": 1
+    },
+    "test_attributs_chat": {
+      "name": "TestMammifere: test_attributs_chat",
+      "points": 1
+    },
+    "test_crier_chat": {
+      "name": "TestMammifere: test_crier_chat",
+      "points": 1
+    },
+    "test_constructeur_cockatiel": {
+      "name": "TestOiseau: test_constructeur_cockatiel",
+      "points": 1
+    },
+    "test_attributs_cockatiel": {
+      "name": "TestOiseau: test_attributs_cockatiel",
+      "points": 1
+    },
+    "test_str_chant": {
+      "name": "TestOiseau: test_str_chant",
+      "points": 1
+    },
+    "test_str_sans_chant": {
+      "name": "TestOiseau: test_str_sans_chant",
+      "points": 1
+    },
+    "test_crier_oiseau_chant": {
+      "name": "TestOiseau: test_crier_oiseau_chant",
+      "points": 1
+    },
+    "test_crier_oiseau_sans_chant": {
+      "name": "TestOiseau: test_crier_oiseau_sans_chant",
+      "points": 1
+    },
+    "test_constructeur_serpent": {
+      "name": "TestReptile: test_constructeur_serpent",
+      "points": 1
+    },
+    "test_attributs_serpent": {
+      "name": "TestReptile: test_attributs_serpent",
+      "points": 1
+    },
+    "test_str_nocturne": {
+      "name": "TestReptile: test_str_nocturne",
+      "points": 1
+    },
+    "test_str_diurne": {
+      "name": "TestReptile: test_str_diurne",
+      "points": 1
+    },
+    "test_str_serpent_venimeux": {
+      "name": "TestReptile: test_str_serpent_venimeux",
+      "points": 1
+    },
+    "test_str_serpent_non_venimeux": {
+      "name": "TestReptile: test_str_serpent_non_venimeux",
+      "points": 1
+    },
+    "test_crier_serpent": {
+      "name": "TestReptile: test_crier_serpent",
+      "points": 1
+    },
+    "test_constructeur_tiktok": {
+      "name": "TestTikTok: test_constructeur_tiktok",
+      "points": 2
+    },
+    "test_attributs_tiktok": {
+      "name": "TestTikTok: test_attributs_tiktok",
+      "points": 2
+    },
+    "test_ajouter_animal": {
+      "name": "TestTikTok: test_ajouter_animal",
+      "points": 2
+    },
+    "test_lt": {
+      "name": "TestTikTok: test_lt",
+      "points": 2
+    },
+    "test_str_tiktok": {
+      "name": "TestTikTok: test_str_tiktok",
+      "points": 2
+    },
+    "test_vues_tiktok": {
+      "name": "TestTikTok: test_vues_tiktok",
+      "points": 2
+    },
+    "test_constructeur_compte": {
+      "name": "TestCompteTikTok: test_constructeur_compte",
+      "points": 2
+    },
+    "test_attributs_compte": {
+      "name": "TestCompteTikTok: test_attributs_compte",
+      "points": 2
+    },
+    "test_len_compte": {
+      "name": "TestCompteTikTok: test_len_compte",
+      "points": 2
+    },
+    "test_iadd_compte": {
+      "name": "TestCompteTikTok: test_iadd_compte",
+      "points": 2
+    },
+    "test_vues_compte": {
+      "name": "TestCompteTikTok: test_vues_compte",
+      "points": 2
+    },
+    "test_tiktoks_plus_populaires": {
+      "name": "TestCompteTikTok: test_tiktoks_plus_populaires",
+      "points": 2
+    },
+    "test_main": {
+      "name": "TestMain: test_main",
+      "points": 4
+    }
+  }

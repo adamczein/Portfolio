@@ -1,0 +1,53 @@
+test_attributs_accessoire (__main__.TestAccessoire) ... ok
+test_constructeur (__main__.TestAccessoire) ... ok
+test_score_viral_bijou (__main__.TestAccessoire) ... ok
+test_score_viral_chapeau (__main__.TestAccessoire) ... ok
+test_score_viral_chaussures (__main__.TestAccessoire) ... ok
+test_score_viral_vetement (__main__.TestAccessoire) ... ok
+test_str (__main__.TestAccessoire) ... ok
+test_add (__main__.TestAnimal) ... ok
+test_calcul_meilleur_animal (__main__.TestAnimal) ... ok
+test_crier_abstraite (__main__.TestAnimal) ... ok
+test_iadd (__main__.TestAnimal) ... ok
+test_iadd_chaussures (__main__.TestAnimal) ... ok
+test_score_viral_animal (__main__.TestAnimal) ... ok
+test_attributs_compte (__main__.TestCompteTikTok) ... ok
+test_constructeur_compte (__main__.TestCompteTikTok) ... ok
+test_iadd_compte (__main__.TestCompteTikTok) ... ok
+test_len_compte (__main__.TestCompteTikTok) ... ok
+test_tiktoks_plus_populaires (__main__.TestCompteTikTok) ... ok
+test_vues_compte (__main__.TestCompteTikTok) ... ok
+test_score_viral_abstraite (__main__.TestElementViral) ... ok
+test_attributs_filtre (__main__.TestFiltre) ... ok
+test_score_viral_filtre (__main__.TestFiltre) ... ok
+test_main (__main__.TestMain) ... ok
+test_attributs_chat (__main__.TestMammifere) ... ok
+test_constructeur_chat (__main__.TestMammifere) ... ok
+test_crier_chat (__main__.TestMammifere) ... ok
+test_str_mammifere (__main__.TestMammifere) ... ok
+test_attributs (__main__.TestMusique) ... ok
+test_score_viral (__main__.TestMusique) ... ok
+test_attributs_cockatiel (__main__.TestOiseau) ... ok
+test_constructeur_cockatiel (__main__.TestOiseau) ... ok
+test_crier_oiseau_chant (__main__.TestOiseau) ... ok
+test_crier_oiseau_sans_chant (__main__.TestOiseau) ... ok
+test_str_chant (__main__.TestOiseau) ... ok
+test_str_sans_chant (__main__.TestOiseau) ... ok
+test_attributs_serpent (__main__.TestReptile) ... ok
+test_constructeur_serpent (__main__.TestReptile) ... ok
+test_crier_serpent (__main__.TestReptile) ... ok
+test_str_diurne (__main__.TestReptile) ... ok
+test_str_nocturne (__main__.TestReptile) ... ok
+test_str_serpent_non_venimeux (__main__.TestReptile) ... ok
+test_str_serpent_venimeux (__main__.TestReptile) ... ok
+test_ajouter_animal (__main__.TestTikTok) ... ok
+test_attributs_tiktok (__main__.TestTikTok) ... ok
+test_constructeur_tiktok (__main__.TestTikTok) ... ok
+test_lt (__main__.TestTikTok) ... ok
+test_str_tiktok (__main__.TestTikTok) ... ok
+test_vues_tiktok (__main__.TestTikTok) ... ok
+
+----------------------------------------------------------------------
+Ran 48 tests in 0.005s
+
+OK
