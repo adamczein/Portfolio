@@ -1,4 +1,4 @@
-# Adam Czein's Portfolio 
+# Adam El-Zein's Portfolio 
  
 Welcome to my portfolio repository! This collection showcases my programming projects and skills. 
  
@@ -37,5 +37,5 @@ A Java implementation of algorithms for tariff calculations.
 ## Contact 
  
 - GitHub: [adamczein](https://github.com/adamczein) 
-- Email: [your-email@example.com] 
-- LinkedIn: [Your LinkedIn Profile] 
+- Email: [adamczein2@gmail.com] 
+- LinkedIn: [] 
