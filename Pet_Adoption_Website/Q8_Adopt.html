@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paws & Hearts Pet Adoption</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="css/Adopt.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container" style="display: flex; align-items: center; justify-content: space-between; padding: 10px; background-color: #f4f4f4; border-bottom: 2px solid #ccc;">
+            <!-- Logo and title -->
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <a href="adopt.html">
+                    <!-- Logo image -->
+                    <img src="images/logo.png" alt="Paws & Hearts Logo" class="logo" style="width: 80px; height: auto;">
+                </a>
+                <h1 style="margin: 0; font-size: 24px; color: #333;">Paws & Hearts Pet Adoption</h1>
+            </div>
+            <!-- Current date and time -->
+            <div id="current-datetime" style="font-size: 14px; color: #666;"></div>
+        </div>
+        <script src="js/datetime.js"></script>
+    </header>
+
+    <div class="container">
+        <!-- Side navigation menu -->
+        <nav class="side-menu">
+            <ul>
+                <!-- Navigation items -->
+                <li><a href="Q8_Adopt.html" class="active">Home</a></li>
+                <li><a href="Q8_Browse.html">Browse Available Pets</a></li>
+                <li><a href="Q8_Find.html">Find a Dog/Cat</a></li>
+                <li><a href="Q8_DogCare.html">Dog Care</a></li>
+                <li><a href="Q8_CatCare.html">Cat Care</a></li>
+                <li><a href="Q8_Giveaway.html">Have a Pet to Give Away</a></li>
+                <li><a href="Q8_Contact.html">Contact Us</a></li>
+                <li><a href="Q8_Privacy.html">Privacy</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main content area -->
+        <main class="content">
+            <section class="welcome">
+                <h2>Welcome to Paws & Hearts</h2>
+                <p>Finding forever homes for our furry friends</p>
+                <br>
+                <article class="about-us">
+                    <h3>Our Mission</h3>
+                    <p>At Paws & Hearts, we believe every pet deserves a loving home. Our platform connects caring pet owners with individuals and families looking to adopt cats and dogs. We strive to make the adoption process simple, transparent, and rewarding for both pets and their future families.</p>
+                </article>
+                <br>
+                <article class="why-adopt">
+                    <h3>Why Adopt?</h3>
+                    <p>When you adopt a pet, you're not just adding a new member to your family - you're saving a life. Our adoption process ensures that both pets and adopters are well-matched, creating lasting bonds and happy homes.</p>
+                </article>
+                <br>
+                <article class="getting-started">
+                    <h3>Getting Started</h3>
+                    <p>Ready to find your perfect companion? Browse our available pets or use our search tool to find the perfect match for your lifestyle. If you're a pet owner looking to rehome your pet, we're here to help ensure they find the best possible home.</p>
+                </article>
+                <br>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            
+            <p>&copy; 2025 Paws & Hearts. All rights reserved. <a href="Q8_Privacy.html">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Array of slide image paths
+        const slides = [
+            'images/slide1.jpg.webp',
+            'images/slide2.jpg.webp',
+            'images/slide3.jpg.webp',
+            'images/slide4.jpg.webp'
+        ];
+
+        // Current slide index
+        let currentSlide = 0;
+
+        // Show the next slide
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            document.getElementById('slide').src = slides[currentSlide];
+        }
+
+        // Show the previous slide
+        function previousSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            document.getElementById('slide').src = slides[currentSlide];
+        }
+    </script>
+</body>
+</html>

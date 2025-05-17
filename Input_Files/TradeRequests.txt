@@ -1,0 +1,3 @@
+REQ001 USA China Electronics 100000 20
+REQ002 China USA Agriculture 50000 35
+REQ003 Germany USA Automobiles 80000 5

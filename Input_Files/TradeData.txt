@@ -1,0 +1,5 @@
+Steel,China,Raw Material,1000.0
+Smartphone,USA,Electronics,800.0
+Car,Japan,Automobile,25000.0
+Rice,India,Agriculture,500.0
+

@@ -1,0 +1,36 @@
+h1 {
+    color: #0f0f0f;
+    text-align: left;
+}
+.nav-menu {
+    width: 200px;
+}
+
+.nav-menu ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu ul li {
+    margin-bottom: 2px; /* Add space between list items */
+}
+
+.nav-menu ul li a {
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: grey;
+    transition: all 0.3s ease;
+}
+
+.nav-menu ul li a.active {
+    background-color: green;
+    color: white;
+}
+
+.nav-menu ul li a:hover:not(.active) {
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,4 @@
+Car,Japan,Automobile,25000.00
+Rice,India,Agriculture,525.00
+Smartphone,USA,Electronics,880.00
+Steel,China,Raw Material,1250.00

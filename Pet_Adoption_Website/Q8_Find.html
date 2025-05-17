@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Pet - Paws & Hearts</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="css/Adopt.css">
+    <!-- JavaScript for date and form validation -->
+    <script src="js/datetime.js"></script>
+    <script src="js/find-form-validation.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container" style="display: flex; align-items: center; justify-content: space-between; padding: 10px; background-color: #f4f4f4; border-bottom: 2px solid #ccc;">
+            <!-- Logo and title -->
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <a href="adopt.html">
+                    <img src="images/logo.png" alt="Paws & Hearts Logo" class="logo" style="width: 80px; height: auto;">
+                </a>
+                <h1 style="margin: 0; font-size: 24px; color: #333;">Paws & Hearts Pet Adoption - Find your perfect pet</h1>
+            </div>
+            <!-- Current date and time -->
+            <div id="current-datetime" style="font-size: 14px; color: #666;"></div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Side navigation menu -->
+        <nav class="side-menu">
+            <ul>
+                <li><a href="Q8_Adopt.html" class="active">Home</a></li>
+                <li><a href="Q8_Browse.html">Browse Available Pets</a></li>
+                <li><a href="Q8_Find.html">Find a Dog/Cat</a></li>
+                <li><a href="Q8_DogCare.html">Dog Care</a></li>
+                <li><a href="Q8_CatCare.html">Cat Care</a></li>
+                <li><a href="Q8_Giveaway.html">Have a Pet to Give Away</a></li>
+                <li><a href="Q8_Contact.html">Contact Us</a></li>
+                <li><a href="Q8_Privacy.html">Privacy</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main content area -->
+        <main class="content">
+            <div class="form-container">
+                <h2>Find a Dog or Cat</h2>
+                <form action="#" method="post">
+                    <!-- Pet type selection -->
+                    <div class="form-group">
+                        <label>Pet Type:</label>
+                        <select name="pet-type" required>
+                            <option value="">Select pet type</option>
+                            <option value="dog">Dog</option>
+                            <option value="cat">Cat</option>
+                        </select>
+                    </div>
+
+                    <!-- Breed selection -->
+                    <div class="form-group">
+                        <label>Breed:</label>
+                        <select name="breed">
+                            <option value="any">Doesn't matter</option>
+                            <option value="mixed">Mixed Breed</option>
+                        </select>
+                    </div>
+
+                    <!-- Age range selection -->
+                    <div class="form-group">
+                        <label>Age Range:</label>
+                        <select name="age">
+                            <option value="any">Doesn't matter</option>
+                            <option value="puppy">Under 1 year</option>
+                            <option value="young">1-3 years</option>
+                            <option value="adult">4-8 years</option>
+                            <option value="senior">9+ years</option>
+                        </select>
+                    </div>
+
+                    <!-- Gender selection -->
+                    <div class="form-group">
+                        <label>Gender:</label>
+                        <select name="gender">
+                            <option value="any">Doesn't matter</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+
+                    <!-- Compatibility checkboxes -->
+                    <div class="form-group">
+                        <label>Must get along with:</label>
+                        <div>
+                            <input type="checkbox" id="dogs" name="along_with_dogs">
+                            <label for="dogs">Other dogs</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="cats" name="along_with_cats">
+                            <label for="cats">Other cats</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="children" name="along_with_children">
+                            <label for="children">Small children</label>
+                        </div>
+                    </div>
+
+                    <!-- Form buttons -->
+                    <div class="form-group">
+                        <button type="submit">Search</button>
+                        <button type="reset">Clear</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Paws & Hearts Pet Adoption</p>
+            <p>&copy; 2025 Paws & Hearts. All rights reserved. <a href="Q8_Privacy.html">Privacy Policy</a></p>
+        </div>
+    </footer>
+</body>
+</html>

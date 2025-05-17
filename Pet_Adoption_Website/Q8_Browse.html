@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paws & Hearts - Available Pets</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="css/Adopt.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container" style="display: flex; align-items: center; justify-content: space-between; padding: 10px; background-color: #f4f4f4; border-bottom: 2px solid #ccc;">
+            <!-- Logo and title -->
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <a href="Q8_Adopt.html">
+                    <img src="images/logo.png" alt="Paws & Hearts Logo" class="logo" style="width: 80px; height: auto;">
+                </a>
+                <h1 style="margin: 0; font-size: 24px; color: #333;">Paws & Hearts Pet Adoption- Browse</h1>
+            </div>
+            <!-- Current date and time -->
+            <div id="current-datetime" style="font-size: 14px; color: #666;"></div>
+        </div>
+        <script src="js/datetime.js"></script>
+    </header>
+
+    <div class="container">
+        <!-- Side navigation menu -->
+        <nav class="side-menu">
+            <ul>
+                <li><a href="Q8_Adopt.html">Home</a></li>
+                <li><a href="Q8_Browse.html" class="active">Browse Available Pets</a></li>
+                <li><a href="Q8_Find.html">Find a Dog/Cat</a></li>
+                <li><a href="Q8_DogCare.html">Dog Care</a></li>
+                <li><a href="Q8_CatCare.html">Cat Care</a></li>
+                <li><a href="Q8_Giveaway.html">Have a Pet to Give Away</a></li>
+                <li><a href="Q8_Contact.html">Contact Us</a></li>
+                <li><a href="Q8_Privacy.html">Privacy</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main content area -->
+        <main class="content">
+            <section class="available-pets">
+                <h2>Available Pets for Adoption</h2>
+                <p>Meet our wonderful pets looking for their forever homes!</p>
+                
+                <div class="pet-grid">
+                    <!-- Pet 1 -->
+                    <article class="pet-card">
+                        <img src="images/dog1.jpg" alt="Tyson">
+                        <div class="pet-details">
+                            <h3>Max</h3>
+                            <p><strong>Type:</strong> Dog</p>
+                            <p><strong>Breed:</strong> Mix</p>
+                            <p><strong>Age:</strong> 9 years</p>
+                            <p><strong>Gender:</strong> Male</p>
+                            <p><strong>Gets Along:</strong> Dogs, Children</p>
+                            <button class="interested-btn" data-pet="Max">I'm Interested</button>
+                        </div>
+                    </article>
+
+                    <!-- Pet 2 -->
+                    <article class="pet-card">
+                        <img src="images/cat1.jpg" alt="Whiskers the Siamese">
+                        <div class="pet-details">
+                            <h3>Whiskers</h3>
+                            <p><strong>Type:</strong> Cat</p>
+                            <p><strong>Breed:</strong> Siamese</p>
+                            <p><strong>Age:</strong> 2 years</p>
+                            <p><strong>Gender:</strong> Female</p>
+                            <p><strong>Gets Along:</strong> Cats, Calm Homes</p>
+                            <button class="interested-btn" data-pet="Whiskers">I'm Interested</button>
+                        </div>
+                    </article>
+
+                    <!-- Pet 3 -->
+                    <article class="pet-card">
+                        <img src="images/dog2.jpg" alt="Chucky">
+                        <div class="pet-details">
+                            <h3>Chucky</h3>
+                            <p><strong>Type:</strong> Dog</p>
+                            <p><strong>Breed:</strong> German Shepherd</p>
+                            <p><strong>Age:</strong> 5 years</p>
+                            <p><strong>Gender:</strong> Male</p>
+                            <p><strong>Gets Along:</strong> Dogs, Active Families</p>
+                            <button class="interested-btn" data-pet="Chucky">I'm Interested</button>
+                        </div>
+                    </article>
+
+                    <!-- Pet 4 -->
+                    <article class="pet-card">
+                        <img src="images/cat2.jpg" alt="Luna the Maine Coon">
+                        <div class="pet-details">
+                            <h3>Luna</h3>
+                            <p><strong>Type:</strong> Cat</p>
+                            <p><strong>Breed:</strong> Maine Coon</p>
+                            <p><strong>Age:</strong> 1 year</p>
+                            <p><strong>Gender:</strong> Female</p>
+                            <p><strong>Gets Along:</strong> Calm Dogs, Children</p>
+                            <button class="interested-btn" data-pet="Luna">I'm Interested</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Paws & Hearts. All rights reserved. <a href="Q8_Privacy.html">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for pet interactions -->
+    <script src="js/browse-pets.js"></script>
+</body>
+</html>
