@@ -1,0 +1,68 @@
+/*
+ * Nom:TP1
+ * Auteurs: Dylan Batista-Moniz - 1954776
+ *          Jeremy Charland - 1955452
+ */
+
+
+ #include <avr/io.h> 
+ #define F_CPU 8000000
+ #include <util/delay.h>
+
+void BoucleRougeVertAmbre(){
+  DDRB = 0xff; // PORT B est en mode sortie
+  
+  for (;;){
+    PORTB = 0x01; //Rouge
+
+    _delay_ms(1000); //Delay 1 sec
+
+    PORTB = 0x02; //Vert
+
+    _delay_ms(1000); //Delay 1 sec
+
+    double compteur2 = 0;
+    while (compteur2 <= 90){  //While loop pour Ambre //Compteur determine par essaie-erreur
+       PORTB = 0x02;
+      
+      _delay_ms(10); //Delay determine par essaie-erreur
+
+      PORTB = 0x01;
+
+      _delay_ms(2); //Delay determine par essaie-erreur
+
+      compteur2++;
+    }
+    
+  }
+}
+
+void InterupteurAmbre(){
+  DDRB = 0xff;
+  for(;;){
+    if(PIND & 0x04){
+      _delay_ms(10);
+      if(PIND & 0x04){
+        double compteur2 = 0;
+        while (compteur2 <= 90 && PIND & 0x04){  //While loop pour Ambre //Compteur determine par essaie-erreur
+          PORTB = 0x02;
+          
+          _delay_ms(10); //Delay determine par essaie-erreur
+
+          PORTB = 0x01;
+
+          _delay_ms(2); //Delay determine par essaie-erreur
+
+          compteur2++;
+        }
+      }
+    }
+    else{
+      PORTB = 0x00;
+    }
+  }
+}
+
+int main(){
+  return 0;
+}

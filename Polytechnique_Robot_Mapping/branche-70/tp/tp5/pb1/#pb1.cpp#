@@ -1,0 +1,39 @@
+/*
+ * Nom:TP4 pb1
+ * Auteurs: Dylan Batista-Moniz - 1954776
+ *          Jeremy Charland - 1955452
+*/
+
+ #include <avr/io.h> 
+ #define F_CPU 8000000
+ #include <util/delay.h>
+ #include <avr/interrupt.h>
+
+const int ROUGE = 0x01;
+const int VERT = 0x02;
+const int PRESSED = 0x04;
+const int MODE_SORTIE = 0xff;
+const int ETEINT = 0x00;
+volatile bool currentStateIsPressed = false;
+enum State {state0, state1, state2, state3, state4, state5, state6}; //Les 7 etat sont definis
+volatile State state = state0; //Etat initial indique
+
+// placer le bon type de signal d'interruption
+
+// à prendre en charge en argument
+
+void CheckIfPressed(){ // Fonction qui verifie si le boutton D est active
+    _delay_ms(10);
+    if(PIND & PRESSED)	//
+        currentStateIsPressed = true;
+
+
+int main(){
+    initialisation();
+    for(;;){
+        lumieres();
+    }
+    return 0;
+}
+
+ 

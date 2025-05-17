@@ -1,0 +1,223 @@
+Polytechnique Montréal
+
+Département de génie informatique et génie logiciel
+
+INF1900: Projet initial de système embarqué
+
+Grille de correction des programmes:
+
+Identification:
+  Travail    : Mise en commun du code et formation des librairies
+  Section #  : 4
+  Équipe #   : 7071
+  Correcteur : Claudia Onorato
+
+Code:
+– La qualités et le choix de vos portions de code choisies   (2.5/5)
+– La qualités de vos modifications aux Makefiles             (5/5)
+
+Le rapport:
+– Explications cohérentes par rapport au code retenu
+  pour former la librairie                                   (2/2)
+– Explications cohérentes par rapport aux Makefiles modifiés (2/2)
+– Explications claires avec un bon niveau de détails         (2/2)
+– Bon français                                               (1/1)
+
+Généralités:
+– Bonne soumission de l'ensemble du code (compilation sans
+  erreurs, …) et du rapport selon le format demandé          (2/3)
+
+Total: 16.5/20
+
+Commentaires du correcteur:
+- (-.5) Nom de paramètres non significatifs ex. void PWM(int a, int b, int c);
+- (-.5) Faites aussi attention à la cohérence dans la convention des noms de fonctions 
+  (ex: delay_ms_Variable qui est en snake case vs SensorLumiere qui est en upper camel case)
+- (-.5) Code doit être dans une seule langue (ex. Sensorlumiere, Debounce, AffichageMemoire, ...)
+- (-.5) La fonction Sensorlumiere n'est pas assez générale et peut être difficilement réutilisé.
+- (-.5) Les fonctions issues de Debounce et d'InterruptionExterne aurait dû être regroupé au sein
+        d'un même fichier, car ils permettent la lecture du bouton.
+
+- (-1) Fichiers indésirables dans tp/tp7
+
+** Il fallait bien enlever le 'make install' du makefile de la librairie! **
+
+======================= Basé sur le commit suivant =============================
+commit 497a1c6ffca0da142e5cbed37749fb7f5ca2b9c1
+Author: Dylan <batista.d09@hotmail.com>
+Date:   Sat Mar 2 12:51:38 2019 -0500
+
+    TP7 FINAL
+
+======================= Fichiers indésirables =============================
+branche-70/tp/tp1/fichierCode.d
+branche-70/tp/tp1/fichierCode.o
+branche-70/tp/tp1/test32bits.hex
+branche-70/tp/tp1/test32bits.out
+branche-70/tp/tp1/test32bits.out.map
+branche-70/tp/tp2/pb2/pb2.d
+branche-70/tp/tp2/pb2/pb2.o
+branche-70/tp/tp3/Tp3Porb1.hex
+branche-70/tp/tp3/Tp3Porb1.out
+branche-70/tp/tp3/Tp3Porb1.out.map
+branche-70/tp/tp3/fichierCodeProb1.d
+branche-70/tp/tp3/fichierCodeProb1.o
+branche-70/tp/tp4/pb1/TP4.hex
+branche-70/tp/tp4/pb1/TP4.out
+branche-70/tp/tp4/pb1/TP4.out.map
+branche-70/tp/tp4/pb1/pb1.d
+branche-70/tp/tp4/pb1/pb1.o
+branche-70/tp/tp4/pb2/TP4.hex
+branche-70/tp/tp4/pb2/TP4.out
+branche-70/tp/tp4/pb2/TP4.out.map
+branche-70/tp/tp4/pb2/pb2.d
+branche-70/tp/tp4/pb2/pb2.o
+branche-70/tp/tp4/pb3/TP4.hex
+branche-70/tp/tp4/pb3/TP4.out
+branche-70/tp/tp4/pb3/TP4.out.map
+branche-70/tp/tp4/pb3/TP5.hex
+branche-70/tp/tp4/pb3/TP5.out
+branche-70/tp/tp4/pb3/TP5.out.map
+branche-70/tp/tp4/pb3/pb3.d
+branche-70/tp/tp4/pb3/pb3.o
+branche-70/tp/tp5/pb1/TP4.hex
+branche-70/tp/tp5/pb1/TP4.out
+branche-70/tp/tp5/pb1/TP4.out.map
+branche-70/tp/tp5/pb1/memoire_24.d
+branche-70/tp/tp5/pb1/memoire_24.o
+branche-70/tp/tp5/pb1/pb1.d
+branche-70/tp/tp5/pb1/pb1.o
+branche-70/tp/tp5/pb2/TP4.hex
+branche-70/tp/tp5/pb2/TP4.out
+branche-70/tp/tp5/pb2/TP4.out.map
+branche-70/tp/tp5/pb2/pb2.d
+branche-70/tp/tp5/pb2/pb2.o
+branche-70/tp/tp5/pb3/TP5.hex
+branche-70/tp/tp5/pb3/TP5.out
+branche-70/tp/tp5/pb3/TP5.out.map
+branche-70/tp/tp5/pb3/memoire_24.d
+branche-70/tp/tp5/pb3/memoire_24.o
+branche-70/tp/tp5/pb3/pb3.d
+branche-70/tp/tp5/pb3/pb3.o
+branche-70/tp/tp6/pb1/TP6.hex
+branche-70/tp/tp6/pb1/TP6.out
+branche-70/tp/tp6/pb1/TP6.out.map
+branche-70/tp/tp6/pb1/pb1.d
+branche-70/tp/tp6/pb1/pb1.o
+branche-70/tp/tp6/pb2/TP6.hex
+branche-70/tp/tp6/pb2/TP6.out
+branche-70/tp/tp6/pb2/TP6.out.map
+branche-70/tp/tp6/pb2/can.d
+branche-70/tp/tp6/pb2/can.o
+branche-70/tp/tp6/pb2/pb2.d
+branche-70/tp/tp6/pb2/pb2.o
+branche-71/Labo1/Part1.o
+branche-71/Labo1/Part2.o
+branche-71/Labo1/interrupteur.d
+branche-71/Labo1/interrupteur.o
+branche-71/Labo1/test32bits.hex
+branche-71/Labo1/test32bits.out
+branche-71/Labo1/test32bits.out.map
+branche-71/Labo2/Prob1.o
+branche-71/Labo2/Prob2.d
+branche-71/Labo2/Prob2.o
+branche-71/Labo2/test32bits.hex
+branche-71/Labo2/test32bits.out
+branche-71/Labo2/test32bits.out.map
+branche-71/Labo4/Prob1.d
+branche-71/Labo4/Prob1.o
+branche-71/Labo4/Prob2.d
+branche-71/Labo4/Prob2.o
+branche-71/Labo4/Prob3.d
+branche-71/Labo4/Prob3.o
+branche-71/Labo4/test32bits.hex
+branche-71/Labo4/test32bits.out
+branche-71/Labo4/test32bits.out.map
+branche-71/Labo6/Prob1.d
+branche-71/Labo6/Prob1.o
+branche-71/Labo6/prob2/Prob2.d
+branche-71/Labo6/prob2/Prob2.o
+branche-71/Labo6/prob2/can.d
+branche-71/Labo6/prob2/can.o
+branche-71/Labo6/prob2/test32bits.hex
+branche-71/Labo6/prob2/test32bits.out
+branche-71/Labo6/prob2/test32bits.out.map
+branche-71/Labo6/test32bits.hex
+branche-71/Labo6/test32bits.out
+branche-71/Labo6/test32bits.out.map
+branche-71/labo3/Attenuation.o
+branche-71/labo3/Exercice2.d
+branche-71/labo3/Exercice2.o
+branche-71/labo3/test32bits.hex
+branche-71/labo3/test32bits.out
+branche-71/labo3/test32bits.out.map
+codeCommun/exec_dir/Main.d
+codeCommun/exec_dir/Main.o
+codeCommun/exec_dir/MakeFileExecutable.hex
+codeCommun/exec_dir/MakeFileExecutable.out
+codeCommun/exec_dir/MakeFileExecutable.out.map
+codeCommun/lib_dir/AffichageMemoire.d
+codeCommun/lib_dir/AffichageMemoire.o
+codeCommun/lib_dir/DEL.d
+codeCommun/lib_dir/DEL.o
+codeCommun/lib_dir/Debounce.d
+codeCommun/lib_dir/Debounce.o
+codeCommun/lib_dir/InterruptionExterne.d
+codeCommun/lib_dir/InterruptionExterne.o
+codeCommun/lib_dir/Minuterie.d
+codeCommun/lib_dir/Minuterie.o
+codeCommun/lib_dir/PWM_delayVariable.d
+codeCommun/lib_dir/PWM_delayVariable.o
+codeCommun/lib_dir/SensorLumiere.d
+codeCommun/lib_dir/SensorLumiere.o
+codeCommun/lib_dir/TestLumiere.o
+codeCommun/lib_dir/can.d
+codeCommun/lib_dir/can.o
+codeCommun/lib_dir/libstatique.a
+codeCommun/lib_dir/memoire_24.d
+codeCommun/lib_dir/memoire_24.o
+tp/tp7/exec_dir/Main.d
+tp/tp7/exec_dir/Main.o
+tp/tp7/exec_dir/MakeFileExecutable.hex
+tp/tp7/exec_dir/MakeFileExecutable.out
+tp/tp7/exec_dir/MakeFileExecutable.out.map
+tp/tp7/lib_dir/AffichageMemoire.d
+tp/tp7/lib_dir/AffichageMemoire.o
+tp/tp7/lib_dir/DEL.d
+tp/tp7/lib_dir/DEL.o
+tp/tp7/lib_dir/Debounce.d
+tp/tp7/lib_dir/Debounce.o
+tp/tp7/lib_dir/InterruptionExterne.d
+tp/tp7/lib_dir/InterruptionExterne.o
+tp/tp7/lib_dir/Minuterie.d
+tp/tp7/lib_dir/Minuterie.o
+tp/tp7/lib_dir/PWM_delayVariable.d
+tp/tp7/lib_dir/PWM_delayVariable.o
+tp/tp7/lib_dir/SensorLumiere.d
+tp/tp7/lib_dir/SensorLumiere.o
+tp/tp7/lib_dir/TestLumiere.o
+tp/tp7/lib_dir/can.d
+tp/tp7/lib_dir/can.o
+tp/tp7/lib_dir/libstatique.a
+tp/tp7/lib_dir/memoire_24.d
+tp/tp7/lib_dir/memoire_24.o
+
+======================= Sortie de make dans les sous-répertoires =============================
+======================= Sortie de make dans tp/tp7/lib_dir =============================
+avr-gcc -I. -MMD  -g -mmcu=atmega324pa -Os -fpack-struct -fshort-enums -funsigned-bitfields -funsigned-char -Wall                                         -fno-exceptions      -c AffichageMemoire.cpp
+avr-gcc -I. -MMD  -g -mmcu=atmega324pa -Os -fpack-struct -fshort-enums -funsigned-bitfields -funsigned-char -Wall                                         -fno-exceptions      -c DEL.cpp
+avr-gcc -I. -MMD  -g -mmcu=atmega324pa -Os -fpack-struct -fshort-enums -funsigned-bitfields -funsigned-char -Wall                                         -fno-exceptions      -c Debounce.cpp
+avr-gcc -I. -MMD  -g -mmcu=atmega324pa -Os -fpack-struct -fshort-enums -funsigned-bitfields -funsigned-char -Wall                                         -fno-exceptions      -c InterruptionExterne.cpp
+avr-gcc -I. -MMD  -g -mmcu=atmega324pa -Os -fpack-struct -fshort-enums -funsigned-bitfields -funsigned-char -Wall                                         -fno-exceptions      -c Minuterie.cpp
+avr-gcc -I. -MMD  -g -mmcu=atmega324pa -Os -fpack-struct -fshort-enums -funsigned-bitfields -funsigned-char -Wall                                         -fno-exceptions      -c PWM_delayVariable.cpp
+avr-gcc -I. -MMD  -g -mmcu=atmega324pa -Os -fpack-struct -fshort-enums -funsigned-bitfields -funsigned-char -Wall                                         -fno-exceptions      -c SensorLumiere.cpp
+avr-gcc -I. -MMD  -g -mmcu=atmega324pa -Os -fpack-struct -fshort-enums -funsigned-bitfields -funsigned-char -Wall                                         -fno-exceptions      -c can.cpp
+avr-gcc -I. -MMD  -g -mmcu=atmega324pa -Os -fpack-struct -fshort-enums -funsigned-bitfields -funsigned-char -Wall                                         -fno-exceptions      -c memoire_24.cpp
+ar  -crs libstatique.a  AffichageMemoire.o DEL.o Debounce.o InterruptionExterne.o Minuterie.o PWM_delayVariable.o SensorLumiere.o can.o memoire_24.o  
+warning: /Library/Developer/CommandLineTools/usr/bin/ranlib: warning for library: libstatique.a the table of contents is empty (no object file members in the library define global symbols)
+
+======================= Sortie de make dans tp/tp7/exec_dir =============================
+avr-gcc -I. -MMD -I ../lib_dir -g -mmcu=atmega324pa -Os -fpack-struct -fshort-enums -funsigned-bitfields -funsigned-char -Wall                                         -fno-exceptions      -c Main.cpp
+avr-gcc -Wl,-Map,MakeFileExecutable.out.map -mmcu=atmega324pa -o MakeFileExecutable.out  Main.o \
+	-lm -L ../lib_dir/-llibstatique
+

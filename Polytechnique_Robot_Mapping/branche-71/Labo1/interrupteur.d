@@ -1,0 +1,1 @@
+interrupteur.o: interrupteur.cpp
